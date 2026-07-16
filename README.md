@@ -36,3 +36,17 @@ $$z = \frac{x - \mu}{\sigma}$$
 
 ### 3. Model Architecture
 We train a **Random Forest Classifier** (`n_estimators=100`). This ensemble learning technique builds multiple decision trees and aggregates their predictions, which significantly improves generalization and prevents overfitting.
+
+
+📈 Performance & Results
+The model achieves strong classification performance:
+
+Overall Accuracy: ~80%
+
+Recall for High-Risk Patients: ~91% (catching 30 out of 33 actual high-risk patients in the test set, ensuring a low False Negative rate).
+
+Visualizations Included:
+
+Confusion Matrix Heatmap: Displays exact counts of True Positives, True Negatives, False Positives, and False Negatives.
+
+Feature Importance Plot: Shows that Chest Pain Type (cp), Maximum Heart Rate (thalachh), and ST depression (oldpeak) are the strongest predictors of heart attack risk.
